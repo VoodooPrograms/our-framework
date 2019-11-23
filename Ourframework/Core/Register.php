@@ -3,12 +3,17 @@
 
 namespace Ourframework\Core;
 
-
+/*
+ * Register class - there are all core pieces and getters and setters for them
+ * This is singleton class
+ * Every communication between classes should be put here
+ */
 class Register
 {
     private static $instance;
 
     private $apphelper;
+    private $appcontroller;
     private $request;
     private $settingsManger;
 
@@ -33,6 +38,9 @@ class Register
      */
     public function getAppHelper() : AppHelper
     {
+        if (!isset($this->apphelper)) {
+            $this->apphelper = new AppHelper();
+        }
         return $this->apphelper;
     }
 
@@ -42,6 +50,22 @@ class Register
     public function setAppHelper(AppHelper $apphelper): void
     {
         $this->apphelper = $apphelper;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAppcontroller()
+    {
+        return $this->appcontroller;
+    }
+
+    /**
+     * @param mixed $appcontroller
+     */
+    public function setAppcontroller($appcontroller): void
+    {
+        $this->appcontroller = $appcontroller;
     }
 
     /**

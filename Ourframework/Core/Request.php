@@ -3,7 +3,9 @@
 
 namespace Ourframework\Core;
 
-
+/*
+ * This class will be much more extended
+ */
 abstract class Request
 {
     protected $path = "/";

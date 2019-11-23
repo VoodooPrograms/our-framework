@@ -23,13 +23,13 @@ class App
         return $this->reg->getAppHelper();
     }
 
+    /*
+     * We can think about other handlers and put them into seperate classes
+     */
     private function handleRequest() {
         $request = $this->reg->getRequest();
         $appcontroller = new AppController();
-        //$ctrl = $appcontroller->getController($request);
-        //var_dump($ctrl);
-        //$cmd->execute($request);
-        //$view = $appcontroller->getView($request);
-        //$view->render($request);
+        $ctrl = $appcontroller->getController($request);
+        $ctrl->execute($request);
     }
 }
