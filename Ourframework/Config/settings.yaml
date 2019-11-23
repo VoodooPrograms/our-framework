@@ -1,0 +1,11 @@
+settings:
+    core:
+        dsn:
+    database:
+        host:
+        password:
+        engine:
+    relative_paths:
+        -
+    absolute_paths:
+        -
