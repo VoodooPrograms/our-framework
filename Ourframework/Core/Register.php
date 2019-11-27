@@ -16,6 +16,7 @@ class Register
     private $appcontroller;
     private $request;
     private $settingsManger;
+    private $resolver;
 
 
     private function __construct(){}
@@ -100,4 +101,19 @@ class Register
         $this->settingsManger = $settingsManger;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getResolver()
+    {
+        return $this->resolver;
+    }
+
+    /**
+     * @param mixed $resolver
+     */
+    public function setResolver($resolver): void
+    {
+        $this->resolver = $resolver;
+    }
 }

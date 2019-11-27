@@ -16,7 +16,14 @@ class AppController
     }
 
     public function getController(Request $request): Controller {
-        $controler = $this->setmgr->matchRoute($request);
+        if (isset($_SERVER["REQUEST_METHOD"])){
+            $resolver = new UrlResolver();
+        } else {
+            // $request = new CliRequest();
+            // There will be more type of request eg. CliRequest, ApiRequest
+        }
+        $controler = $this->reg->getResolver()->match($request);
+        //$controler = $this->setmgr->matchRoute($request);
         return new $controler;
     }
 

@@ -23,6 +23,10 @@ class SettingsManager
         $this->routing = $routing;
     }
 
+    public function getRoutingTable(): array {
+        return $this->routing;
+    }
+
     public function setDbsett(array $dbsett): void {
         $this->dbsett = $dbsett;
     }
