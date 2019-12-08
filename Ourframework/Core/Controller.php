@@ -11,9 +11,12 @@ namespace Ourframework\Core;
  */
 abstract class Controller
 {
-    final public function __construct(){}
+    final public function __construct()
+    {
+    }
 
-    public function execute(Request $request){
+    public function execute(Request $request)
+    {
         $status = $this->index($request);
         $request->setStatus($status);
     }

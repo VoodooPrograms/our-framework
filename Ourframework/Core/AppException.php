@@ -3,7 +3,6 @@
 
 namespace Ourframework\Core;
 
-
 /*
  * Just not now...
  */

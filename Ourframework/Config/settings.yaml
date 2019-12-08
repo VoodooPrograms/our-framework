@@ -1,5 +1,6 @@
 settings:
     core:
+        tempalate_path: ""
         dsn:
     database:
         host:
