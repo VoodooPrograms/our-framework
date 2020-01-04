@@ -11,6 +11,7 @@ namespace Ourframework\Core;
  */
 abstract class Controller
 {
+
     final public function __construct()
     {
     }
@@ -19,6 +20,22 @@ abstract class Controller
     {
         $status = $this->index($request);
         $request->setStatus($status);
+    }
+
+    protected function render(string $template=null, array $parr=[])
+    {
+
+
+        if(file_exists($template))
+        {
+            extract($parr);//zmienić
+            $vs = new ViewSupport();//wazne zeby vs byl po extrakcie
+            ob_start();
+            include $template;
+            $output = ob_get_clean();
+        }
+        print $output;
+        return 1;
     }
 
     abstract public function index(Request $request): int;

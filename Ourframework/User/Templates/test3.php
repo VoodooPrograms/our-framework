@@ -1,0 +1,10 @@
+<HTML>
+<HEAD>
+    <title>HI</title>
+</HEAD>
+<BODY>
+<b><?php
+    $vs->print($tablica);
+    ?></b>
+</BODY>
+</HTML>
