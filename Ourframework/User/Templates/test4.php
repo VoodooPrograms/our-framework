@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-    <title>HI</title>
+    <title>HI2</title>
 </HEAD>
 <BODY>
 <b><?php
