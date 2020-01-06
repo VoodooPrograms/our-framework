@@ -4,7 +4,11 @@
 </HEAD>
 <BODY>
 <b><?php
-    $vs->print($tablica);
+    echo "I'm test3.php";
+    //$vs->print($tablica);
+    $vs->params($parr);
+    //$vs->dump($parr);
+    $vs->date();
     ?></b>
 </BODY>
 </HTML>

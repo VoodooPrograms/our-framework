@@ -15,7 +15,7 @@ class SimpleController extends Controller
         echo "SimpleController";
 
         $a1='a2';
-        return $this->render('User/Templates/test3.php', ['apple' => "apple", 'a1' => '$a1',
-            "tablica"=> ["Aleks1" => "Ola1", "Aleks2" => "Ola2"]]);
+        return $this->render('User/Templates/test3.php', ['apple_key' => "apple_value", 'a1_key' => '$a1_value',
+            "tablica" => ["Aleks1_key" => "Ola1_value", "Aleks2_key" => "Ola2_value"]]);
     }
 }
