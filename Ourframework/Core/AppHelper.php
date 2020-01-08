@@ -36,7 +36,7 @@ class AppHelper
     private function loadConfigFile(string $file): array
     {
         if (!file_exists($file)) {
-            throw new AppException("message");
+            throw new AppException("File '$file' does not exist");
         }
         $settings = yaml_parse_file($file);
         return $settings;
@@ -48,14 +48,14 @@ class AppHelper
     public function setSettings(array $settings): void
     {
         $setmgr = new SettingsManager();
-        $this->registry->setSettingsManger($setmgr);
+        $this->registry->setSettingsManager($setmgr);
         $setmgr->setDbsett($settings["settings"]);
     }
 
     public function setRouting(array $routing): void
     {
         $setmgr = new SettingsManager();
-        $this->registry->setSettingsManger($setmgr);
+        $this->registry->setSettingsManager($setmgr);
         $setmgr->setRoutingTable($routing["routing"]);
     }
 }
