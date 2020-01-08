@@ -1,6 +1,7 @@
 settings:
     core:
-        tempalate_path: ""
+        routing: "Config/routing.yaml"
+        tempalate_path: "User/Templates/"
         dsn:
     database:
         host:
