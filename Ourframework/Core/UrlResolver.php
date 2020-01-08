@@ -48,16 +48,19 @@ class UrlResolver extends Resolver
             for ($i = 0; $i < $URL_size; $i++) {
                 if ($URL_parts[$i] != $URL_parts_yaml[$i]) {
                     //regex
-                    if( substr($URL_parts[$i], 0) == '{' && substr($URL_parts[$i], -1) == '}' ){
+                    //echo substr($URL_parts_yaml[$i], 0, 1)." + ".substr($URL_parts_yaml[$i], -1, 1);
+                    if( substr($URL_parts_yaml[$i], 0, 1) == '{' && substr($URL_parts_yaml[$i], -1, 1) == '}' ){
                         
                         $regex = substr($URL_parts_yaml[$i], 1, -1); //=Number or =String
-                        
+                        //echo $regex." + ".$URL_parts_yaml[$i];
+                        //var_dump(is_numeric("123"));
                         if(is_numeric($URL_parts[$i]) && $regex == "Number") {
                             $action = $record["action"];
-                        } else if(is_string($URL_parts) && $regex == "String") {
+                            //echo "REGEX";
+                        } else if(!is_numeric($URL_parts[$i]) && $regex == "String") {
                             $action = $record["action"];
                         } else {
-                            throw new AppException("Invalid regex");
+                            //throw new AppException("Invalid regex");
                             //todo:
                             //  · to fix later...
                         }
@@ -91,5 +94,23 @@ class UrlResolver extends Resolver
             // don't throw exception here
         }
         return $refclass->newInstance();
+    }
+
+    // for YAML file
+    private function isRegex($var): bool {
+
+    }
+
+    private function isAsterisk($var): bool {
+
+    }
+
+    // for paths
+    private function isNumber($var): bool {
+
+    }
+
+    private function isString($var): bool {
+
     }
 }

@@ -6,14 +6,11 @@ routing:
         path: /
         action: Ourframework\User\Controllers\SimpleController
     blog:
-        path: /blog
+        path: /blog/*
         action: Ourframework\User\Controllers\BlogController
-    blog_article:
-        path: /blog/article/*
-        action: Ourframework\User\Controllers\SimpleController
-    blog_page:
-        path: /blog/[page]/*
-        action: Ourframework\User\Controllers\SimpleController
-    admin:
-        path: /admin
-        action: Action4
+    blog_art:
+        path: /blog/{String}
+        action: Ourframework\User\Controllers\StringRegexController
+    blog_regex:
+        path: /blog/{Number}
+        action: Ourframework\User\Controllers\NumberRegexController
