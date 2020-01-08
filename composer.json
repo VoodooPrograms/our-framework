@@ -1,0 +1,17 @@
+{
+    "config": {
+        "vendor-dir": "Ourframework/vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ourframework\\": "Ourframework/",
+            "Tests\\": "Tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "require": {
+
+    }
+}

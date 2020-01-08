@@ -8,6 +8,8 @@ declare(strict_types=1);
  */
 set_include_path(dirname(getcwd()).DIRECTORY_SEPARATOR);
 
+require_once("vendor/autoload.php");
+
 spl_autoload_register(function ($path) {
     if (preg_match('/\\\\/', $path)) {
         $path = str_replace('\\', DIRECTORY_SEPARATOR, $path);
