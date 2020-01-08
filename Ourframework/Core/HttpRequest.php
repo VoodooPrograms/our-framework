@@ -3,7 +3,6 @@
 
 namespace Ourframework\Core;
 
-
 class HttpRequest extends Request
 {
 
