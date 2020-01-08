@@ -21,5 +21,9 @@ abstract class Controller
         $request->setStatus($status);
     }
 
+    protected function render() {
+        return 1;
+    }
+
     abstract public function index(Request $request): int;
 }
