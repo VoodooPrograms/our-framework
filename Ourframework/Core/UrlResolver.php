@@ -15,7 +15,7 @@ class UrlResolver extends Resolver
 
     public function match(Request $request): ?Controller {
         $path = $request->getPath();
-        $routing = $this->reg->getSettingsManger()->getRoutingTable();
+        $routing = $this->reg->getSettingsManager()->getRoutingTable();
         //var_dump($routing);
         foreach ($routing as $route){
             if ($route["path"] == $path){

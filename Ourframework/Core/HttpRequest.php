@@ -9,6 +9,10 @@ class HttpRequest extends Request
 
     protected function launch()
     {
-        $this->setPath($_SERVER["REQUEST_URI"]);
+        if (isset($_SERVER["REQUEST_URI"])) {
+            $this->setPath($_SERVER["REQUEST_URI"]);
+        } else {
+            $this->setPath("/");
+        }
     }
 }
