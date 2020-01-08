@@ -12,7 +12,7 @@ class AppController
     {
         $this->reg = Register::instance();
         $this->reg->setAppcontroller($this);
-        $this->setmgr = $this->reg->getSettingsManger();
+        $this->setmgr = $this->reg->getSettingsManager();
     }
 
     public function getController(Request $request): Controller
@@ -20,6 +20,7 @@ class AppController
         if (isset($_SERVER["REQUEST_METHOD"])) {
             $resolver = new UrlResolver();
         } else {
+            //$resolver = new UrlResolver();
             // $request = new CliRequest();
             // There will be more type of request eg. CliRequest, ApiRequest
         }

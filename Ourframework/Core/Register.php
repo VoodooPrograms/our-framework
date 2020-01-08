@@ -15,7 +15,7 @@ class Register
     private $apphelper;
     private $appcontroller;
     private $request;
-    private $settingsManger;
+    private $settingsManager;
     private $resolver;
 
 
@@ -31,6 +31,7 @@ class Register
     }
 
     public static function reset() {
+        echo "Hej";
         self::$instance = null;
     }
 
@@ -88,17 +89,17 @@ class Register
     /**
      * @return mixed
      */
-    public function getSettingsManger()
+    public function getSettingsManager()
     {
-        return $this->settingsManger;
+        return $this->settingsManager;
     }
 
     /**
-     * @param mixed $settingsManger
+     * @param mixed $settingsManager
      */
-    public function setSettingsManger($settingsManger): void
+    public function setSettingsManager($settingsManager): void
     {
-        $this->settingsManger = $settingsManger;
+        $this->settingsManager = $settingsManager;
     }
 
     /**
