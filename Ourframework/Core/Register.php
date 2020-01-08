@@ -19,18 +19,26 @@ class Register
     private $resolver;
 
 
-    private function __construct(){}
-    public function __destruct(){}
-    private function __clone(){}
+    private function __construct()
+    {
+    }
+    public function __destruct()
+    {
+    }
+    private function __clone()
+    {
+    }
 
-    public static function instance(): Register {
+    public static function instance(): Register
+    {
         if (is_null(self::$instance)) {
             self::$instance = new self();
         }
         return self::$instance;
     }
 
-    public static function reset() {
+    public static function reset()
+    {
         echo "Hej";
         self::$instance = null;
     }

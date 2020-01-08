@@ -21,7 +21,8 @@ abstract class Controller
         $request->setStatus($status);
     }
 
-    protected function render() {
+    protected function render()
+    {
         return 1;
     }
 
