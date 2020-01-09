@@ -17,13 +17,13 @@ class UrlResolver extends Resolver
 
 
         $path = $request->getPath();
-         $routing = $this->reg->getSettingsManger()->getRoutingTable(); //print_r($routing);
+        $routing = $this->reg->getSettingsManger()->getRoutingTable(); //print_r($routing);
          
         foreach ($routing as $route){
             if ($route["path"] == $path){
                 $action = $route["action"];
-                echo $route["path"];
-                echo $path.PHP_EOL;
+                //echo $route["path"];
+                //echo $path.PHP_EOL;
             }
         }
         $URL_parts = explode("/", $path);
@@ -49,16 +49,14 @@ class UrlResolver extends Resolver
                 if ($URL_parts[$i] != $URL_parts_yaml[$i]) {
                     //regex
                     //echo substr($URL_parts_yaml[$i], 0, 1)." + ".substr($URL_parts_yaml[$i], -1, 1);
-                    if( substr($URL_parts_yaml[$i], 0, 1) == '{' && substr($URL_parts_yaml[$i], -1, 1) == '}' ){
+                    if($this->isRegex($URL_parts_yaml[$i])){
                         
                         $regex = substr($URL_parts_yaml[$i], 1, -1); //=Number or =String
-                        //echo $regex." + ".$URL_parts_yaml[$i];
-                        //var_dump(is_numeric("123"));
+
                         if(is_numeric($URL_parts[$i]) && $regex == "Number") {
-                            $action = $record["action"];
-                            //echo "REGEX";
+                            //$action = $record["action"];
                         } else if(!is_numeric($URL_parts[$i]) && $regex == "String") {
-                            $action = $record["action"];
+                            //$action = $record["action"];
                         } else {
                             //throw new AppException("Invalid regex");
                             //todo:
@@ -98,11 +96,11 @@ class UrlResolver extends Resolver
 
     // for YAML file
     private function isRegex($var): bool {
-
+        return (substr($var, 0, 1) == '{' && substr($var, -1, 1) == '}') ? true : false;
     }
 
     private function isAsterisk($var): bool {
-
+        return ($var == "*") ? true : false ;
     }
 
     // for paths
