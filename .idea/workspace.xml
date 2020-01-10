@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e83afe4e-9f90-46e8-9f4b-d77c5c03dca3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Ourframework/Core/UrlResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ourframework/Core/UrlResolver.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/Register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Config/settings.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/UrlResolver.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/Resolver.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getController</find>
+      <find>setRout</find>
+      <find>METH</find>
+      <find>yaml_</find>
+      <find>loadCo</find>
+      <find>setReq</find>
+      <find>setup</find>
+      <find>var</find>
+      <find>dump</find>
+      <find>match</find>
+      <find>forea</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Ourframework</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="http" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/our-framework/index.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Config/routing.yaml" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/AppException.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Request.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/SettingsManager.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Resolver.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Templates/strona.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Controller.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/SimpleController.php" />
+        <option value="$PROJECT_DIR$/Ourframework/index.php" />
+        <option value="$PROJECT_DIR$/Tests/AppTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/App.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/HttpRequest.php" />
+        <option value="$PROJECT_DIR$/Tests/RequestTest.php" />
+        <option value="$PROJECT_DIR$/Tests/AppControllerTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Register.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/AppController.php" />
+        <option value="$PROJECT_DIR$/Tests/RegisterTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/AppHelper.php" />
+        <option value="$PROJECT_DIR$/Tests/AppHelperTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Config/settings.yaml" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/UrlResolver.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="018573a3-012a-4932-9678-50f40a1108e5" name="ServerHTTP" port="8070" use_path_mappings="true" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/Ourframework/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/composer" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/doctrine/instantiator" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="421" />
+    <option name="y" value="165" />
+    <option name="width" value="776" />
+    <option name="height" value="127" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pulpit/our-framework" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Built-in Web Server.Server">
+    <configuration name="Server" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/Ourframework" port="8070">
+      <method v="2" />
+    </configuration>
+    <configuration name="CLI" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Ourframework/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="WEB" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="ServerHTTP" start_url="http://localhost/our-framework/index.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Built-in Web Server.Server" />
+      <item itemvalue="PHP Script.CLI" />
+      <item itemvalue="PHP Web Page.WEB" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e83afe4e-9f90-46e8-9f4b-d77c5c03dca3" name="Default Changelist" comment="" />
+      <created>1573848364554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573848364554</updated>
+      <workItem from="1573848366487" duration="3753000" />
+      <workItem from="1574429609561" duration="4016000" />
+      <workItem from="1574529382899" duration="13798000" />
+      <workItem from="1574862195045" duration="3714000" />
+      <workItem from="1574961150065" duration="2991000" />
+      <workItem from="1575803432188" duration="1824000" />
+      <workItem from="1576076690287" duration="3269000" />
+      <workItem from="1576580978410" duration="1381000" />
+      <workItem from="1576591034028" duration="2298000" />
+      <workItem from="1577378128986" duration="1231000" />
+      <workItem from="1577543867525" duration="12899000" />
+      <workItem from="1577624679147" duration="13154000" />
+      <workItem from="1577735375950" duration="1408000" />
+      <workItem from="1578131776601" duration="6663000" />
+      <workItem from="1578428533006" duration="1432000" />
+      <workItem from="1578484032148" duration="743000" />
+      <workItem from="1578495202591" duration="3943000" />
+      <workItem from="1578593742413" duration="636000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init commit with file structure">
+      <created>1573849784825</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573849784825</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init commit with file structure">
+      <created>1573850107276</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573850107276</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create simple Application manager">
+      <created>1574430487352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574430487352</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Blueprint of request class">
+      <created>1574436431277</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574436431277</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add examples for config files">
+      <created>1574546714586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574546714586</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding most of the logic, some fixes and comments for future work">
+      <created>1574547105483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574547105483</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add all content to SettingsManager class">
+      <created>1574547285621</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574547285621</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Http classes">
+      <created>1574547394652</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574547394652</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add base class for user created controllers">
+      <created>1574547518753</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574547518753</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add examples of user controllers">
+      <created>1574547584107</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574547584107</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Migration match function to resolver classes">
+      <created>1574865806978</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574865806978</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Migration match function to resolver classes">
+      <created>1575803715778</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575803715778</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Grammatic fix SettingsManager">
+      <created>1578495478942</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578495478942</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Under construction render example">
+      <created>1578495585914</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578495585914</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Miscellaneous">
+      <created>1578492362577</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578492362577</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Grammatic fix SettingsManager">
+      <created>1578492400266</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578492400266</updated>
+    </task>
+    <task id="LOCAL-00017" summary="First unit tests mady with PHPUnit">
+      <created>1578492593632</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1578492593632</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Code style fixes PSR-12">
+      <created>1578493492326</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1578493492326</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="79153000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2871212" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32594937" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32911393" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit with file structure" />
+    <MESSAGE value="Create simple Application manager" />
+    <MESSAGE value="Blueprint of request class" />
+    <MESSAGE value="Set flow through AppController" />
+    <MESSAGE value="Add examples for config files" />
+    <MESSAGE value="Adding most of the logic, some fixes and comments for future work" />
+    <MESSAGE value="Add all content to SettingsManager class" />
+    <MESSAGE value="Add Http classes" />
+    <MESSAGE value="Add base class for user created controllers" />
+    <MESSAGE value="Add examples of user controllers" />
+    <MESSAGE value="Under construction render example" />
+    <MESSAGE value="Miscellaneous" />
+    <MESSAGE value="Integrate with Composer, autoload, composer.json" />
+    <MESSAGE value="First unit tests mady with PHPUnit" />
+    <MESSAGE value="Code style fixes PSR-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code style fixes PSR-12" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpResponse.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#51#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="341" column="9" selection-start-line="341" selection-start-column="9" selection-end-line="341" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/AppTest.php" />
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/AppControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#27#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/AppHelperTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/SimpleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="e#51#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Templates/strona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/SettingsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/RegisterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/RequestTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/settings.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Resolver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/UrlResolver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
