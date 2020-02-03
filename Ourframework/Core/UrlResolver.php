@@ -7,77 +7,91 @@ class UrlResolver extends Resolver
         $this->reg = Register::instance();
         $this->reg->setResolver($this);
     }
+
     public function match(Request $request): ?Controller {
         $path = $request->getPath();
-        $routing = $this->reg->getSettingsManger()->getRoutingTable(); //print_r($routing);
+        $routing = $this->reg->getSettingsManager()->getRoutingTable();
 
-        foreach ($routing as $route){
-            if ($route["path"] == $path){
-                $action = $route["action"];
-                echo $route["path"];
-                echo $path.PHP_EOL;
-            }
-        }
-        $URL_parts = explode("/", $path);
-        $URL_size = count($URL_parts);
-        $matched_paths = $routing;
-        /* Sprawdzenie głębokości */
-        for($level = 0; $level < $URL_size; $level++){
-            foreach ($routing as $key => $record) {
-                if(count(explode("/", $record["path"])) != count($URL_parts)){
-                    unset($matched_paths[$key]);
+        $action = $this->oneToOne($path, $routing);
+
+        if (!isset($action)) {
+
+            $URL_parts = explode("/", $path);
+            $URL_size = count($URL_parts);
+            $matched_paths = $routing;
+            /* Sprawdzenie głębokości */
+            for ($level = 0; $level < $URL_size; $level++) {
+                foreach ($routing as $key => $record) {
+                    if (count(explode("/", $record["path"])) != count($URL_parts)) {
+                        unset($matched_paths[$key]);
+                    }
                 }
             }
-        }
-        //sort($matched_parts);
-        /* Szukanie wzorca */
-        foreach ($matched_paths as $key => $record) {
-            $URL_parts_yaml = explode("/", $record["path"]);
-            for ($i = 0; $i < $URL_size; $i++) {
-                if ($URL_parts[$i] != $URL_parts_yaml[$i]) {
+
+            foreach ($matched_paths as $key => $record) {
+                $URL_parts_yaml = explode("/", $record["path"]);
+                for ($i = 0; $i < $URL_size; $i++) {
                     //regex
-                    if( substr($URL_parts[$i], 0) == '{' && substr($URL_parts[$i], -1) == '}' ){
-
-                        $regex = substr($URL_parts_yaml[$i], 1, -1); //=Number or =String
-
-                        if(is_numeric($URL_parts[$i]) && $regex == "Number") {
+                    if (substr($URL_parts_yaml[$i], 0, 1) == '{' && substr($URL_parts_yaml[$i], -1, 1) == '}') {
+                        $regex = substr($URL_parts_yaml[$i], 1, -1);
+                        if ($this->isNumber($URL_parts[$i]) && $regex == "Number") {
+                            echo "Number: " . $URL_parts[$i].$i;
                             $action = $record["action"];
-                        } else if(is_string($URL_parts) && $regex == "String") {
+                        } else if ($this->isNotNumber($URL_parts[$i]) && $regex == "String") {
+                            echo "String: " . $URL_parts[$i].$i;
                             $action = $record["action"];
                         } else {
-                            throw new AppException("Invalid regex");
-                            //todo:
-                            //  · to fix later...
+                            //throw new AppException("Resolver can't resolve this regex: ".$URL_parts_yaml[$i]);
                         }
-                    } else if ( $URL_parts_yaml[$i] == '*' && isset($URL_parts[$i])) {
+                    } else if ($URL_parts_yaml[$i] == '*' && isset($URL_parts[$i])) {
                         $action = $record["action"];
+                        echo "Asterisk: " . $URL_parts[$i].$i;
                     }
-                    //else unset
-
-                } else {
-                    //explicited noted Strinf from routin table
+                    //unset($matched_paths);
                 }
+                //if(isset($matched_paths[$key]))
+                //$action = $record["action"];
             }
-
-            if(isset($matched_paths[$key]))
-                $action = $record["action"];
         }
-        //print_r($matched_paths);
-        var_dump($action);
+        return $this->validateAction($action);
+    }
+
+    private function isNumber($var): bool {
+        //iterates every char in $var and checking that specified char is (or not) a digit
+        $size = strlen($var);
+        $digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        for($i = 0; $i < $size; $i++) {
+            if( !in_array($var[$i], $digits) ) return false; //if char IS NOT a digit return false
+        }
+        return true;
+    }
+
+    private function isNotNumber($var): bool {
+        return !$this->isNumber($var);
+    }
+
+    private function validateAction(string $action): Controller {
         if(is_null($action)){
             http_response_code(404);
             throw new AppException("There is no action");
-            return new HttpResponse();
         }
-
         if (!class_exists($action)){
-            // don't throw exception here
             throw new AppException("Class do not exist");
         }
         $refclass = new \ReflectionClass($action);
         if (!$refclass->isSubclassOf(Controller::class)){
-            // don't throw exception here
+            throw new AppException("This class is not subclass of Controller");
         }
         return $refclass->newInstance();
     }
+
+    private function oneToOne(string $path, array $routing): ?string {
+        foreach ($routing as $route){
+            if ($route["path"] == $path){
+                $action = $route["action"];
+            }
+        }
+        return isset($action) ? $action : null;
+    }
+
 }
