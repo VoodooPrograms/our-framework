@@ -6,13 +6,16 @@ routing:
         path: /
         action: Ourframework\User\Controllers\SimpleController
     blog:
-        path: /blog
+        path: /blog/art
         action: Ourframework\User\Controllers\BlogController
     blog_article:
-        path: /blog/article/*
+        path: /blog
         action: Ourframework\User\Controllers\SimpleController
     blog_page:
-        path: /blog/[page]/*
+        path: /blog/{Number}
+        action: Ourframework\User\Controllers\BlogController
+    blog_page_string:
+        path: /blog/{String}
         action: Ourframework\User\Controllers\SimpleController
     admin:
         path: /admin
