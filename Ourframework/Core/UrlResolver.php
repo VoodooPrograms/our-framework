@@ -31,29 +31,32 @@ class UrlResolver extends Resolver
             foreach ($matched_paths as $key => $record) {
                 $URL_parts_yaml = explode("/", $record["path"]);
                 for ($i = 0; $i < $URL_size; $i++) {
-                    //regex
-                    if (substr($URL_parts_yaml[$i], 0, 1) == '{' && substr($URL_parts_yaml[$i], -1, 1) == '}') {
-                        $regex = substr($URL_parts_yaml[$i], 1, -1);
-                        if ($this->isNumber($URL_parts[$i]) && $regex == "Number") {
-                            echo "Number: " . $URL_parts[$i].$i;
+                        if($this->isRegex($URL_parts_yaml[$i], $URL_parts[$i])){
                             $action = $record["action"];
-                        } else if ($this->isNotNumber($URL_parts[$i]) && $regex == "String") {
-                            echo "String: " . $URL_parts[$i].$i;
-                            $action = $record["action"];
-                        } else {
-                            //throw new AppException("Resolver can't resolve this regex: ".$URL_parts_yaml[$i]);
-                        }
-                    } else if ($URL_parts_yaml[$i] == '*' && isset($URL_parts[$i])) {
+                        } else if ($URL_parts_yaml[$i] == '*' && isset($URL_parts[$i])) {
                         $action = $record["action"];
                         echo "Asterisk: " . $URL_parts[$i].$i;
                     }
-                    //unset($matched_paths);
                 }
-                //if(isset($matched_paths[$key]))
-                //$action = $record["action"];
             }
         }
         return $this->validateAction($action);
+    }
+
+    private function isRegex(string $routing_part, string $request_part): bool {
+        if (substr($routing_part, 0, 1) == '{' && substr($routing_part, -1, 1) == '}') {
+            $regex = substr($routing_part, 1, -1);
+            if ($this->isNumber($request_part) && $regex == "Number") {
+                echo "Number: " . $request_part;
+                return true;
+            } else if ($this->isNotNumber($request_part) && $regex == "String") {
+                echo "String: " . $request_part;
+                return true;
+            } else {
+                //throw new AppException("Resolver can't resolve this regex: ".$URL_parts_yaml[$i]);
+            }
+        }
+        return false;
     }
 
     private function isNumber($var): bool {
@@ -70,7 +73,7 @@ class UrlResolver extends Resolver
         return !$this->isNumber($var);
     }
 
-    private function validateAction(string $action): Controller {
+    private function validateAction(string $action = null): Controller {
         if(is_null($action)){
             http_response_code(404);
             throw new AppException("There is no action");
