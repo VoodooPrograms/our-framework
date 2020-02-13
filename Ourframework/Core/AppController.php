@@ -26,8 +26,8 @@ class AppController
             // $request = new CliRequest();
             // There will be more type of request eg. CliRequest, ApiRequest
         }
-        $controler = $this->reg->getResolver()->match($request);
-        //$controler = $this->setmgr->matchRoute($request);
+        $routing = $this->reg->getSettingsManager()->getRoutingTable();
+        $controler = $this->reg->getResolver()->match($request, $routing);
         return new $controler;
     }
 

@@ -8,13 +8,16 @@ class AppHelper
     /*
      * These vars will be loaded from config.yaml
      */
-    private $config = "Config/settings.yaml";
-    private $routing = "Config/routing.yaml";
+    private $config = "Config/settings.yaml"; //
+    private $routing = "Config/routing.yaml"; //
     private $registry;
+    private $settings_manager;
 
     public function __construct()
     {
         $this->registry = Register::instance();
+        $this->settings_manager = new SettingsManager();
+        $this->registry->setSettingsManager($this->settings_manager);
     }
 
     public function setup(): string
@@ -26,6 +29,7 @@ class AppHelper
         if (isset($_SERVER["REQUEST_METHOD"])) {
             $request = new HttpRequest();
         } else {
+            $request = new HttpRequest();
             // $request = new CliRequest();
             // There will be more type of request eg. CliRequest, ApiRequest
         }
@@ -47,15 +51,11 @@ class AppHelper
      */
     public function setSettings(array $settings): void
     {
-        $setmgr = new SettingsManager();
-        $this->registry->setSettingsManager($setmgr);
-        $setmgr->setDbsett($settings["settings"]);
+        $this->settings_manager->setDbsett($settings["settings"]);
     }
 
     public function setRouting(array $routing): void
     {
-        $setmgr = new SettingsManager();
-        $this->registry->setSettingsManager($setmgr);
-        $setmgr->setRoutingTable($routing["routing"]);
+        $this->settings_manager->setRoutingTable($routing["routing"]);
     }
 }
