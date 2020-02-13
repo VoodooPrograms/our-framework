@@ -1,3 +1,9 @@
+#
+# TODO
+# This file should be used to set all paths and important variables
+# But for now this is unused
+# Someone has to write class(or methods in SettingsManager) to manage those variables and paths
+#
 settings:
     core:
         routing: "Config/routing.yaml"

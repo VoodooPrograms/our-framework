@@ -1,4 +1,8 @@
 #
+# TODO
+# For testing purpose we need to make huge routing file table consists of all possibility cases
+# To do that I propose make .csv file and write special class for that which will implements Iterator interface
+# Example: https://stackoverflow.com/questions/10646105/how-to-use-a-csv-file-in-phpunit-test
 #
 #
 routing:
@@ -16,6 +20,9 @@ routing:
         action: Ourframework\User\Controllers\BlogController
     blog_page_string:
         path: /blog/{String}
+        action: Ourframework\User\Controllers\SimpleController
+    blog_page_test1:
+        path: /blog/blog/*/*
         action: Ourframework\User\Controllers\SimpleController
     admin:
         path: /admin

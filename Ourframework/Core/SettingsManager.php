@@ -35,6 +35,7 @@ class SettingsManager
         $this->dbsett = $dbsett;
     }
 
+    //todo Delete this
     public function matchRoute(Request $request)
     {
         $path = $request->getPath();
@@ -59,6 +60,7 @@ class SettingsManager
         return $refclass->newInstance();
     }
 
+    //todo Delete this
     public function matchRegex(Request $request)
     {
         $url = parse_url($request->getPath());
