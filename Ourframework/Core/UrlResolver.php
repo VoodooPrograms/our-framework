@@ -56,6 +56,28 @@ class UrlResolver extends Resolver
         return $this->validateAction($action);
     }
 
+    private function isRegex(string $routing_part, string $request_part): bool {
+        if (substr($routing_part, 0, 1) == '{' && substr($routing_part, -1, 1) == '}') {
+            $regex = substr($routing_part, 1, -1);
+            if ($this->isNumber($request_part) && $regex == "Number") {
+                return true;
+            } else if ($this->isNotNumber($request_part) && $regex == "String") {
+                return true;
+            } else {
+                //todo 1. Think what framework should do when someone misspell Regex eg. like Strnig number
+                //todo 2. Allow people to use regular php regular expr. like this {<phpregex>/^[A-Za-z0-9_- ]+$/}
+                //throw new AppException("Resolver can't resolve this regex: ".$URL_parts_yaml[$i]);
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Iterates every char in $var and checking that specified char is (or not) a digit
+     *
+     * @param $var
+     * @return bool
+     */
     private function isNumber($var): bool {
         //iterates every char in $var and checking that specified char is (or not) a digit
         $size = strlen($var);

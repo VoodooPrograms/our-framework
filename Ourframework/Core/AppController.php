@@ -15,6 +15,8 @@ class AppController
         $this->setmgr = $this->reg->getSettingsManager();
     }
 
+    //todo Check how to test
+    // Maybe it should be as service DI
     public function getController(Request $request): Controller
     {
         if (isset($_SERVER["REQUEST_METHOD"])) {

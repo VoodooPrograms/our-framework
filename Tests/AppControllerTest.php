@@ -17,6 +17,7 @@ class AppControllerTest extends \PHPUnit\Framework\TestCase
     }
 
     public function testGetController() {
+        // todo This test should be executed, but for now method getController is 'untestable'
         // Add mock for $request
         $request = new HttpRequest();
         $controller = $this->appcontroller->getController($request);
