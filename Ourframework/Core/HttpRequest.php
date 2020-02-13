@@ -46,7 +46,7 @@ class HttpRequest extends Request
 
     public function setPath(?string $path): void
     {
-        $this->path = $path = "/";
+        $this->path = $path = $path;
     }
 
     public function getStatus(): int
