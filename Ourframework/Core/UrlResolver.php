@@ -8,7 +8,7 @@ class UrlResolver extends Resolver
         $this->reg->setResolver($this);
     }
 
-    public function match(Request $request): ?Controller {
+    public function match(Request $request, array $routing): ?Controller {
         $path = $request->getPath();
         $routing = $this->reg->getSettingsManager()->getRoutingTable();
 
