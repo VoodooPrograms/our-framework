@@ -25,18 +25,18 @@ class HttpRequest extends Request
         $this->setContentLength($_SERVER["CONTENT_LENGTH"]);
         $this->setCookies($_COOKIE);
 
-        printf("<br>" .
-        "<div style=\"margin:16px;padding:16px;background-color:#FFFFC0\">" .
-        "<code><span style=\"font-size:150%%\">" .
-        "<b>(DEBUG) HttpRequest constructor called:</b></span>" . PHP_EOL);
-        printf("<br><i>[path]</i> "); var_dump($this->getPath());
-        printf("<br><i>[status]</i> "); var_dump($this->getStatus());
-        printf("<br><i>[request_method]</i> "); var_dump($this->getRequestMethod());
-        printf("<br><i>[ip_address]</i> "); var_dump($this->getIpAddress());
-        printf("<br><i>[user_agent]</i> "); var_dump($this->getUserAgent());
-        printf("<br><i>[content_type]</i> "); var_dump($this->getContentType());
-        printf("<br><i>[content_length]</i> "); var_dump($this->getContentLength());
-        printf("<br></code></div><br>" . PHP_EOL);
+//        printf("<br>" .
+//        "<div style=\"margin:16px;padding:16px;background-color:#FFFFC0\">" .
+//        "<code><span style=\"font-size:150%%\">" .
+//        "<b>(DEBUG) HttpRequest constructor called:</b></span>" . PHP_EOL);
+//        printf("<br><i>[path]</i> "); var_dump($this->getPath());
+//        printf("<br><i>[status]</i> "); var_dump($this->getStatus());
+//        printf("<br><i>[request_method]</i> "); var_dump($this->getRequestMethod());
+//        printf("<br><i>[ip_address]</i> "); var_dump($this->getIpAddress());
+//        printf("<br><i>[user_agent]</i> "); var_dump($this->getUserAgent());
+//        printf("<br><i>[content_type]</i> "); var_dump($this->getContentType());
+//        printf("<br><i>[content_length]</i> "); var_dump($this->getContentLength());
+//        printf("<br></code></div><br>" . PHP_EOL);
     }
 
     public function getPath(): string
