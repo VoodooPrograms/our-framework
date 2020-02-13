@@ -39,7 +39,6 @@ class Register
 
     public static function reset()
     {
-        echo "Hej";
         self::$instance = null;
     }
 
