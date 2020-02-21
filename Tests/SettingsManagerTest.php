@@ -23,11 +23,8 @@ class SettingsManagerTest extends \PHPUnit\Framework\TestCase
         $this->assertNull($this->settingsManager->setRoutingTable( array() ));
     }
 
-    /**
-     * @depends testSetRoutingTable
-     * todo There is some problems with assertIsArray, it should be put in place of assertNotNull
-     */
     public function testGetRoutingTable(){
-        $this->assertNotNull($this->settingsManager->getRoutingTable());
+        $this->assertIsArray($this->settingsManager->getRoutingTable());
+        //$this->assertNotNull($this->settingsManager->getRoutingTable()); // version for Bartosz :D
     }
 }
