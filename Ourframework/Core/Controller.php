@@ -25,19 +25,24 @@ abstract class Controller
     // Rendering template
     protected function render(string $template=null, array $parr=[])
     {
-        if(file_exists($template))
-        {
-            //if any variable named the same as the key exist <=> extract return number != sizeof($parr), then fail
-            if (extract($parr, EXTR_SKIP) != sizeof($parr))
-                return 1; //fail
-            $vs = new ViewSupport();  //important $vs after extract
-            ob_start();
-            include $template;
-            $output = ob_get_clean();
-            print $output;
-            return 0; //success
-        } else
-            return 1; //fail
+        $reg = Register::instance();
+        $settings = $reg->getSettingsManager()->getSettings();
+        dump($settings);
+        $engine = $settings["template"]["engine"][0];
+        var_dump($settings["core"]["template_path"]);
+        if ($engine == "twig") {
+            $loader = new \Twig\Loader\FilesystemLoader($settings["core"]["template_path"]);
+            $twig = new \Twig\Environment($loader);
+            echo $twig->render($template, $parr); // TODO: return string
+        }
+        else if ($engine == "blade"){
+            // TODO: For beloved Filip
+        }
+        else {
+            $te = new TemplateEngine();
+            $te->render($template, $parr);
+        }
+
     }
 
     abstract public function index(Request $request): int;
