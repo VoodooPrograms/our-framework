@@ -7,12 +7,10 @@
 settings:
     core:
         routing: "Config/routing.yaml"
-        tempalate_path: "User/Templates/"
+        template_path: "User/Templates/"
         dsn:
-    database:
-        host:
-        password:
-        engine:
+    template:
+        engine: ['twig'] # or twig, blade, smarty etc.
     relative_paths:
         -
     absolute_paths:
