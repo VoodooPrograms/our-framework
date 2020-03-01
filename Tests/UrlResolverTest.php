@@ -68,6 +68,11 @@ class UrlResolverTest extends \PHPUnit\Framework\TestCase
         $not_numeric = implode("," ,array_merge(range('a', 'z'), range('A', 'Z')));
         $output = $ref->invoke($this->resolver, $not_numeric);
         $this->assertTrue($output);
+
+        // Leave this
+        $numeric = "0123456789";
+        $isFalse = $ref->invoke($this->resolver, $numeric);
+        $this->assertFalse($isFalse);
     }
 
     private function loadConfigFile(string $file): array
