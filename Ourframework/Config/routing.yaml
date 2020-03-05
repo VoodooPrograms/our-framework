@@ -27,3 +27,9 @@ routing:
     admin:
         path: /admin
         action: Action4
+    radek:
+        path: /radek/{Number}
+        action: Ourframework\User\Controllers\RadekController
+    bartek:
+        path: /radek/{String}/*/*/
+        action: Ourframework\User\Controllers\BartekController

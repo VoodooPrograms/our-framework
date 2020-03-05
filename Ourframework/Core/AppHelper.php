@@ -8,7 +8,9 @@ class AppHelper
     /*
      * These vars will be loaded from config.yaml
      */
+    private const SETTINGS_FILE_NAME = "Config/settings.yaml";
     private $config = "Config/settings.yaml"; //
+    private $dbsett = "Config/dbsett.yaml"; //
     private $routing = "Config/routing.yaml"; //
     private $registry;
     private $settings_manager;
@@ -22,9 +24,11 @@ class AppHelper
 
     public function setup(): string
     {
-        $settings = $this->loadConfigFile($this->config);
+        $dbsett = $this->loadConfigFile($this->dbsett);
         $routing = $this->loadConfigFile($this->routing);
+        $settings = $this->loadConfigFile($this->config);
         $this->setSettings($settings);
+        $this->setDbsett($dbsett);
         $this->setRouting($routing);
         if (isset($_SERVER["REQUEST_METHOD"])) {
             $request = new HttpRequest();
@@ -51,11 +55,16 @@ class AppHelper
      */
     public function setSettings(array $settings): void
     {
-        $this->settings_manager->setDbsett($settings["settings"]);
+        $this->settings_manager->setSettings($settings["settings"]);
     }
 
     public function setRouting(array $routing): void
     {
         $this->settings_manager->setRoutingTable($routing["routing"]);
+    }
+
+    public function setDbsett(array $dbsett): void
+    {
+        $this->settings_manager->setDbsett($dbsett["database"]);
     }
 }

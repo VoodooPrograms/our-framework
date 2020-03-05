@@ -4,6 +4,7 @@
 namespace Tests;
 
 
+use function foo\func;
 use Ourframework\Core\HttpResponse;
 
 
@@ -48,7 +49,9 @@ class HttpResponseTest extends \PHPUnit\Framework\TestCase
         $refbody = new \ReflectionProperty(HttpResponse::class, "body");
         $refbody->setAccessible(true);
         $body = $refbody->getValue($this->response);
-        $this->assertNull($this->response->setBody($body));
+        $this->response->setBody("body");
+
+        $this->assertNotNull($this->response->getBody());
         $this->assertIsString($this->response->getBody());
     }
 }
