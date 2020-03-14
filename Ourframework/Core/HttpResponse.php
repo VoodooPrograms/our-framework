@@ -5,87 +5,69 @@ namespace Ourframework\Core;
 
 class HttpResponse extends Response
 {
-    protected $status = 0;
-    protected $headers = [];
+    protected $headers;
     protected $body = "";
 
     public function __construct()
     {
-        $this->setDefaultHeaders();
+        $this->headers = new Headers;
+        $this->setDefault();
     }
 
-    public static function createResponse(
-        string $body = "",
-        array $headers = []
-    ): HttpResponse {
-        $response = new HttpResponse;
-
-        if (isset($body)) {
-            $response->setBody($body);
-        }
-
-        if (isset($headers)) {
-            foreach ($headers as $key => $value) {
-                if (is_int($key) && is_string($value)) {
-                    $response->setStatus($key);
-                    $response->setHeader($value);
-                }
-            }
-
-            $response->setStatus(0);
-        }
-
-        return $response;
-    }
-
-    public function send(): int
+    public function setDefault(): void
     {
-        echo $this->body;
+        $this->headers->setDefault(200);
+
+        /* DEBUG */
+        dump($this);
+    }
+
+    private function sendBody(): int
+    {
+        echo $this->getBody();
         return 1;
     }
 
-    public function getStatus(): int
+    public function sendHeaders(int $content_length, string $protocol_version): int
     {
-        return $this->status;
+        $this->headers->send($content_length, $protocol_version);
+        return 1;
     }
 
-    public function setStatus(int $status): void
+    public function send(int $content_length, string $protocol_version): int
     {
-        $this->status = $status;
+        if (!isset($this->body)) {
+            throw new AppException(
+                "HttResponse::send():" . PHP_EOL .
+                "Body is empty!"
+            );
+
+            return 0;
+        }
+
+        $this->sendHeaders($content_length, $protocol_version);
+        $this->sendBody();
+
+        return 1;
     }
 
-    public function getHeader(): string
+    public function getHeader(int $status): string
     {
-        if (!isset($this->headers[$this->status])) {
+        $result = $this->headers[$status];
+
+        if (!isset($result)) {
             throw new AppException(
                 "HttpResponse::getHeader():" . PHP_EOL .
                 "Header not set for HTTP status code " . $this->status . "."
             );
         }
 
-        return $this->headers[$this->status];
+        return $result;
     }
 
-    public function setHeader(string $msg): void
+    public function addHeader(int $status, string $desription = null): void
     {
         $this->headers[$this->status] = $msg;
-    }
-
-    protected function setDefaultHeaders(): void
-    {
-        $this->headers = array(
-            200 => "OK",
-            301 => "Moved Permanently",
-            400 => "Bad Request",
-            401 => "Unauthorized",
-            403 => "Forbidden",
-            404 => "Not Found",
-            405 => "Method Not Allowed",
-            408 => "Request Timeout",
-            500 => "Internal Server Error",
-            502 => "Bad Gateway",
-            504 => "Gateway Timeout",
-        );
     }
 
     public function getBody(): string

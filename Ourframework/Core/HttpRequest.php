@@ -9,34 +9,29 @@ class HttpRequest extends Request
     protected $status = 0;
     protected $request_method = "GET";
     protected $ip_address = "";
+    protected $protocol = "";
     protected $user_agent = "";
     protected $content_type = "";
     protected $content_length = 0;
     protected $cookies = [];
     protected $properties = [];
+    protected $query = [];
+    protected $data = [];
 
     protected function launch()
     {
         $this->setPath($_SERVER["REQUEST_URI"]);
         $this->setRequestMethod($_SERVER["REQUEST_METHOD"]);
         $this->setIpAddress($_SERVER["SERVER_NAME"]);
+        $this->setProtocolVersion($_SERVER["SERVER_PROTOCOL"]);
         $this->setUserAgent($_SERVER["HTTP_USER_AGENT"]);
         $this->setContentType($_SERVER["CONTENT_TYPE"]);
         $this->setContentLength($_SERVER["CONTENT_LENGTH"]);
         $this->setCookies($_COOKIE);
+        $this->setQueryAndData();
 
-//        printf("<br>" .
-//        "<div style=\"margin:16px;padding:16px;background-color:#FFFFC0\">" .
-//        "<code><span style=\"font-size:150%%\">" .
-//        "<b>(DEBUG) HttpRequest constructor called:</b></span>" . PHP_EOL);
-//        printf("<br><i>[path]</i> "); var_dump($this->getPath());
-//        printf("<br><i>[status]</i> "); var_dump($this->getStatus());
-//        printf("<br><i>[request_method]</i> "); var_dump($this->getRequestMethod());
-//        printf("<br><i>[ip_address]</i> "); var_dump($this->getIpAddress());
-//        printf("<br><i>[user_agent]</i> "); var_dump($this->getUserAgent());
-//        printf("<br><i>[content_type]</i> "); var_dump($this->getContentType());
-//        printf("<br><i>[content_length]</i> "); var_dump($this->getContentLength());
-//        printf("<br></code></div><br>" . PHP_EOL);
+        /* DEBUG */
+        dump($this);
     }
 
     public function getPath(): string
@@ -46,7 +41,7 @@ class HttpRequest extends Request
 
     public function setPath(?string $path): void
     {
-        $this->path = $path = $path;
+        $this->path = $path;
     }
 
     public function getStatus(): int
@@ -77,6 +72,16 @@ class HttpRequest extends Request
     public function setIpAddress(?string $address): void
     {
         $this->ip_address = $address ?? "";
+    }
+
+    public function getProtocolVersion(): string
+    {
+        return $this->protocol;
+    }
+
+    public function setProtocolVersion(?string $version): void
+    {
+        $this->protocol = $version ?? "";
     }
 
     public function getUserAgent(): string
@@ -131,6 +136,34 @@ class HttpRequest extends Request
     public function setProperty(string $key, $val): void
     {
         $this->properties[$key] = $val;
+    }
+
+    public function getElementFromQuery(string $key): string
+    {
+        $result = $this->query[$key];
+
+        if (!isset($result)) {
+            throw new AppException("(HTTP REQUEST) Query table does not contain \"" . $key . "\" key!");
+        }
+
+        return $result;
+    }
+
+    public function getElementFromData(string $key): string
+    {
+        $result = $this->data[$key];
+
+        if (!isset($result)) {
+            throw new AppException("(HTTP REQUEST) Data table does not contain \"" . $key . "\" key!");
+        }
+
+        return $result;
+    }
+
+    protected function setQueryAndData(): void
+    {
+        $this->query = $_GET;
+        $this->data = $_POST;
     }
 
 }
