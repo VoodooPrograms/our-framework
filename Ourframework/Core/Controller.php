@@ -39,11 +39,11 @@ abstract class Controller
             // TODO: For beloved Filip
         }
         else {
-            $te = new TemplateEngine();
-            $te->render($template, $parr);
+            $loader = $settings["core"]["template_path"];
+            $te = new TemplateEngine($loader);
+            echo $te->render($template, $parr);
         }
-
     }
 
-    abstract public function index(Request $request): int;
+    abstract public function index(Request $request);
 }
