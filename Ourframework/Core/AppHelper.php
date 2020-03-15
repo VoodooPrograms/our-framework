@@ -3,6 +3,8 @@
 
 namespace Ourframework\Core;
 
+use Symfony\Component\Yaml\Yaml;
+
 class AppHelper
 {
     /*
@@ -45,7 +47,7 @@ class AppHelper
         if (!file_exists($file)) {
             throw new AppException("File '$file' does not exist");
         }
-        $settings = yaml_parse_file($file);
+        $settings = Yaml::parseFile($file);
         return $settings;
     }
 

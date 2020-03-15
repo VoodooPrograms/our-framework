@@ -12,6 +12,7 @@ use Ourframework\Core\Request;
 use Ourframework\Core\SettingsManager;
 use Ourframework\Core\UrlResolver;
 use Ourframework\User\Controllers\BlogController;
+use Symfony\Component\Yaml\Yaml;
 
 class UrlResolverTest extends \PHPUnit\Framework\TestCase
 {
@@ -80,7 +81,7 @@ class UrlResolverTest extends \PHPUnit\Framework\TestCase
         if (!file_exists($file)) {
             throw new AppException("File '$file' does not exist");
         }
-        $settings = yaml_parse_file($file);
+        $settings = Yaml::parseFile($file);
         return $settings;
     }
 }
