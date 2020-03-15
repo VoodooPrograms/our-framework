@@ -9,8 +9,9 @@ settings:
         routing: "Config/routing.yaml"
         template_path: "User/Templates/"
         dsn:
+        autoloader: "Core/Autoloader"
     template:
-        engine: ['twig'] # or twig, blade, smarty etc.
+        engine: ['default'] # or twig, blade, smarty etc.
     relative_paths:
         -
     absolute_paths:
