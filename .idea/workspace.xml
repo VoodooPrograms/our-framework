@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e83afe4e-9f90-46e8-9f4b-d77c5c03dca3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Ourframework/Core/UrlResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ourframework/Core/UrlResolver.php" afterDir="false" />
+    <list default="true" id="e83afe4e-9f90-46e8-9f4b-d77c5c03dca3" name="Default Changelist" comment="Update Composer vendor(+twig +dumper)">
+      <change afterPath="$PROJECT_DIR$/Ourframework/Core/Autoloader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ourframework/Core/CustomAutoloader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/our-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/our-framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ourframework/Config/settings.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Ourframework/Config/settings.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ourframework/Core/AppException.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ourframework/Core/Exceptions/AppException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ourframework/Core/HttpRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ourframework/Core/HttpRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ourframework/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ourframework/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,74 +24,110 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppController.php">
+        <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ourframework/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ourframework/Core/Register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ourframework/Config/settings.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#51#84#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ourframework/Core/UrlResolver.php">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Config/routing.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="90">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ourframework/Core/Resolver.php">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="252">
+              <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/vendor/twig/twig/src/Environment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="317" column="37" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/vendor/twig/twig/src/TemplateWrapper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/TemplateEngine.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/Exceptions/AppException.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/AppHelperTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ourframework/Core/UrlResolver.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="3" selection-start-line="4" selection-start-column="1" selection-end-line="7" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getController</find>
-      <find>setRout</find>
       <find>METH</find>
       <find>yaml_</find>
       <find>loadCo</find>
@@ -93,6 +137,15 @@
       <find>dump</find>
       <find>match</find>
       <find>forea</find>
+      <find>There is no action for this url</find>
+      <find>there is no ac</find>
+      <find>ob</find>
+      <find>Controller</find>
+      <find>setSettings</find>
+      <find>setRout</find>
+      <find>index</find>
+      <find>yaml_parse</find>
+      <find>YAML::</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Ourframework</dir>
@@ -102,7 +155,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="http" />
+        <entry key="$PROJECT_DIR$" value="test" />
       </map>
     </option>
   </component>
@@ -110,29 +163,45 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/our-framework/index.php" />
-        <option value="$PROJECT_DIR$/Ourframework/Config/routing.yaml" />
-        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/Ourframework/Core/AppException.php" />
         <option value="$PROJECT_DIR$/Ourframework/Core/Request.php" />
-        <option value="$PROJECT_DIR$/Ourframework/Core/SettingsManager.php" />
         <option value="$PROJECT_DIR$/Ourframework/Core/Resolver.php" />
         <option value="$PROJECT_DIR$/Ourframework/User/Templates/strona.php" />
-        <option value="$PROJECT_DIR$/Ourframework/Core/Controller.php" />
-        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/SimpleController.php" />
-        <option value="$PROJECT_DIR$/Ourframework/index.php" />
         <option value="$PROJECT_DIR$/Tests/AppTest.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/Ourframework/Core/App.php" />
-        <option value="$PROJECT_DIR$/Ourframework/Core/HttpRequest.php" />
-        <option value="$PROJECT_DIR$/Tests/RequestTest.php" />
         <option value="$PROJECT_DIR$/Tests/AppControllerTest.php" />
         <option value="$PROJECT_DIR$/Ourframework/Core/Register.php" />
-        <option value="$PROJECT_DIR$/Ourframework/Core/AppController.php" />
         <option value="$PROJECT_DIR$/Tests/RegisterTest.php" />
-        <option value="$PROJECT_DIR$/Ourframework/Core/AppHelper.php" />
-        <option value="$PROJECT_DIR$/Tests/AppHelperTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Config/routing.yaml" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Templates/test5.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/AppController.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Abc.php" />
+        <option value="$PROJECT_DIR$/Tests/SettingsManagerTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Interfaces/Renderable.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Config/dbsett.yaml" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/SettingsManager.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Templates/twig_test.html" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/SimpleController.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/BartekController.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/RadekController.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Templates/test3.php" />
+        <option value="$PROJECT_DIR$/Tests/Data/CsvIterator.php" />
+        <option value="$PROJECT_DIR$/Tests/RequestTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Autloader.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/CustomAutoloader.php" />
         <option value="$PROJECT_DIR$/Ourframework/Config/settings.yaml" />
+        <option value="$PROJECT_DIR$/Ourframework/index.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Autoloader.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/App.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/AppHelper.php" />
+        <option value="$PROJECT_DIR$/Tests/UrlResolverTest.php" />
+        <option value="$PROJECT_DIR$/Tests/AppHelperTest.php" />
+        <option value="$PROJECT_DIR$/Tests/HttpResponseTest.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/Controller.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/TemplateEngine.php" />
+        <option value="$PROJECT_DIR$/Ourframework/Core/HttpRequest.php" />
         <option value="$PROJECT_DIR$/Ourframework/Core/UrlResolver.php" />
+        <option value="$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php" />
       </list>
     </option>
   </component>
@@ -173,6 +242,10 @@
       <path value="$PROJECT_DIR$/Ourframework/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/Ourframework/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/Ourframework/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/Ourframework/vendor/symfony/yaml" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -187,6 +260,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,7 +289,21 @@
               <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="our-framework" type="462c0819:PsiDirectoryNode" />
               <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
               <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="our-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Ourframework" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="our-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -226,16 +314,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pulpit/our-framework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ourframework/Core/Exceptions" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -293,6 +387,20 @@
       <workItem from="1578484032148" duration="743000" />
       <workItem from="1578495202591" duration="3943000" />
       <workItem from="1578593742413" duration="636000" />
+      <workItem from="1581603429071" duration="30000" />
+      <workItem from="1581784055863" duration="6792000" />
+      <workItem from="1582031150716" duration="6575000" />
+      <workItem from="1582639700572" duration="1516000" />
+      <workItem from="1582641336407" duration="1081000" />
+      <workItem from="1582725917859" duration="107000" />
+      <workItem from="1582804209200" duration="246000" />
+      <workItem from="1583065806114" duration="11447000" />
+      <workItem from="1583131558937" duration="1391000" />
+      <workItem from="1583142712638" duration="2986000" />
+      <workItem from="1583240051657" duration="1243000" />
+      <workItem from="1583602719557" duration="4916000" />
+      <workItem from="1584201393521" duration="6446000" />
+      <workItem from="1584267188119" duration="8963000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit with file structure">
       <created>1573849784825</created>
@@ -420,11 +528,88 @@
       <option name="project" value="LOCAL" />
       <updated>1578493492326</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fix setting $path">
+      <created>1581597610472</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1581597610472</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Re-creating settings files. Separate database config to single file">
+      <created>1583083683245</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1583083683245</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Include settings logic to new division of settings files">
+      <created>1583084057947</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1583084057947</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add more template engines(firstly twig)">
+      <created>1583084309658</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583084309658</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update Composer vendor(+twig +dumper)">
+      <created>1583084473792</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583084473792</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Small fixes to tests">
+      <created>1583084642643</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1583084642644</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Deleting unused statement">
+      <created>1584273581067</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1584273581067</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Replace C library function with symfony/yaml component">
+      <created>1584274824718</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1584274824718</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Changing render method return statement(from int to string), more like Twig render">
+      <created>1584275599208</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1584275599208</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Changing path to templates">
+      <created>1584276039300</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1584276039300</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Adding database settings into test">
+      <created>1584276072351</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1584276072351</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79153000" />
+    <option name="totallyTimeSpent" value="136021000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +623,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2871212" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29545453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,8 +635,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32594937" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32594937" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.38765824" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -514,7 +699,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Init commit with file structure" />
     <MESSAGE value="Create simple Application manager" />
     <MESSAGE value="Blueprint of request class" />
     <MESSAGE value="Set flow through AppController" />
@@ -529,31 +713,22 @@
     <MESSAGE value="Integrate with Composer, autoload, composer.json" />
     <MESSAGE value="First unit tests mady with PHPUnit" />
     <MESSAGE value="Code style fixes PSR-12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code style fixes PSR-12" />
+    <MESSAGE value="Fix setting $path" />
+    <MESSAGE value="Re-creating settings files. Separate database config to single file" />
+    <MESSAGE value="Include settings logic to new division of settings files" />
+    <MESSAGE value="Add more template engines(firstly twig)" />
+    <MESSAGE value="Update Composer vendor(+twig +dumper)" />
+    <MESSAGE value="Small fixes to tests" />
+    <MESSAGE value="Deleting unused statement" />
+    <MESSAGE value="Replace C library function with symfony/yaml component" />
+    <MESSAGE value="Changing render method return statement(from int to string), more like Twig render" />
+    <MESSAGE value="Changing path to templates" />
+    <MESSAGE value="Adding database settings into test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding database settings into test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpResponse.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#51#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -563,57 +738,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/AppTest.php" />
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/AppControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#27#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/AppHelperTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Config/config.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/SimpleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#51#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ourframework/User/Templates/strona.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -621,80 +745,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Config/routing.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/SettingsManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/RegisterTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="-408">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/RequestTest.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="67">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppController.php">
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Abc.php" />
+    <entry file="file://$PROJECT_DIR$/Tests/AppControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ourframework/Config/settings.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#27#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,10 +777,325 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/SettingsManagerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/ViewSupport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/vendor/twig/twig/src/Loader/FilesystemLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/SettingsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/BartekController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#51#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP//home/bartosz/our-framework/Ourframework/Core">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/Ourframework/Core</OriginalElement>
+          <nodes>
+            <node x="" y="">\Ourframework\Core\HttpResponse</node>
+            <node x="" y="">\Ourframework\Core\ViewSupport</node>
+            <node x="" y="">\Ourframework\Core\Request</node>
+            <node x="" y="">\Ourframework\Core\Resolver</node>
+            <node x="" y="">\Ourframework\Core\Interfaces\Renderable</node>
+            <node x="" y="">\Ourframework\Core\AppController</node>
+            <node x="" y="">\Ourframework\Core\HttpRequest</node>
+            <node x="" y="">\Ourframework\Core\Response</node>
+            <node x="" y="">\Ourframework\Core\AppHelper</node>
+            <node x="" y="">\Ourframework\Core\UrlResolver</node>
+            <node x="" y="">\Ourframework\Core\SettingsManager</node>
+            <node x="" y="">\Exception</node>
+            <node x="" y="">\Ourframework\Core\TemplateEngine</node>
+            <node x="" y="">\Ourframework\Core\Register</node>
+            <node x="" y="">\Ourframework\Core\App</node>
+            <node x="" y="">\Ourframework\Core\Controller</node>
+            <node x="" y="">\Ourframework\Core\AppException</node>
+            <node x="" y="">\Throwable</node>
+            <node x="" y="">$PROJECT_DIR$/Ourframework/Core/Interfaces</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="264.0" y="248.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constants</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Templates/test5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/RadekController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <element signature="e#51#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpResponse.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Templates/twig_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Templates/test4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Data/CsvIterator.php" />
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/SimpleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="e#51#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/RequestTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Templates/test3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/CustomAutoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/dbsett.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Interfaces/Renderable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/settings.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/UrlResolverTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/AppHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/HttpResponseTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#27#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Exceptions/AppException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/vendor/twig/twig/src/TemplateWrapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/vendor/twig/twig/src/Environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="317" column="37" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/TemplateEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/AppHelperTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Core/HttpRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ourframework/Core/UrlResolver.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="90">
+          <caret line="7" column="3" selection-start-line="4" selection-start-column="1" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/User/Controllers/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#51#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ourframework/Config/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>

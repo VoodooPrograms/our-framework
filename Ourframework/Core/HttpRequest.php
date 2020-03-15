@@ -25,6 +25,7 @@ class HttpRequest extends Request
         $this->setContentLength($_SERVER["CONTENT_LENGTH"]);
         $this->setCookies($_COOKIE);
 
+        //dump($this);
 //        printf("<br>" .
 //        "<div style=\"margin:16px;padding:16px;background-color:#FFFFC0\">" .
 //        "<code><span style=\"font-size:150%%\">" .
