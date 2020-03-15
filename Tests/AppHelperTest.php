@@ -19,10 +19,13 @@ class AppHelperTest extends \PHPUnit\Framework\TestCase
     public function testSetup(){
         $refconfig = new \ReflectionProperty(AppHelper::class, "config");
         $refrouting = new \ReflectionProperty(AppHelper::class, "routing");
+        $refdbsett = new \ReflectionProperty(AppHelper::class, "dbsett");
         $refconfig->setAccessible(true);
         $refrouting->setAccessible(true);
+        $refdbsett->setAccessible(true);
         $refconfig->setValue($this->apphelpher, "Ourframework/Config/settings.yaml");
         $refrouting->setValue($this->apphelpher, "Ourframework/Config/routing.yaml");
+        $refdbsett->setValue($this->apphelpher, "Ourframework/Config/dbsett.yaml");
         $config = $this->apphelpher->setup();
         $this->assertNotNull($config);
         $this->assertEquals(HttpRequest::class, $config);
