@@ -22,7 +22,7 @@ class AppHelper
         $this->registry->setSettingsManager($this->settings_manager);
     }
 
-    public function setup(): string
+    public function setup()
     {
         $dbsett = $this->loadConfigFile($this->dbsett);
         $routing = $this->loadConfigFile($this->routing);
@@ -33,12 +33,11 @@ class AppHelper
         if (isset($_SERVER["REQUEST_METHOD"])) {
             $request = new HttpRequest();
         } else {
-            $request = new HttpRequest();
+            $request = new HttpRequest(); # This will be changed
             // $request = new CliRequest();
             // There will be more type of request eg. CliRequest, ApiRequest
         }
         $this->registry->setRequest($request);
-        return get_class($request);
     }
 
     private function loadConfigFile(string $file): array
