@@ -12,6 +12,7 @@ use Ourframework\Core\Request;
 use Ourframework\Core\SettingsManager;
 use Ourframework\Core\UrlResolver;
 use Ourframework\User\Controllers\BlogController;
+use Tests\Data\CsvIterator;
 
 class UrlResolverTest extends \PHPUnit\Framework\TestCase
 {
@@ -24,30 +25,22 @@ class UrlResolverTest extends \PHPUnit\Framework\TestCase
         $this->request = $this->createMock(HttpRequest::class);
     }
 
-    public function providerUrls() {
-        return [
-            ["/"],
-            ["/blog"],
-            ["/blog/art"],
-            ["/blog/napis"],
-            ["/blog/liczba"],
-            ["/blog/blog/asd/a2"]
-        ];
-    }
-
     /**
-     * @dataProvider providerUrls
-     * @param string $url
-     * @throws AppException
+     * @dataProvider urlProvider
      */
     public function testMatch(string $url): void
     {
         $this->request->expects($this->any())
             ->method('getPath')
             ->will($this->returnValue($url));
-        $routing = $this->loadConfigFile("Ourframework/Config/routing.yaml");
+        $routing = $this->loadConfigFile("Tests\Data\\routing_test.yaml");
         $controller = $this->resolver->match($this->request, $routing["routing"]);
         $this->assertInstanceOf(Controller::class, $controller);
+    }
+
+    public function urlProvider()
+    {
+        return new CsvIterator('Tests\Data\data.csv');
     }
 
     public function testIsNumber(): void

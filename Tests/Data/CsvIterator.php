@@ -1,6 +1,8 @@
 <?php
 
-namespace OurFramework\Tests\Data
+namespace Tests\Data;
+
+use Iterator;
 
 class CsvIterator implements Iterator //, Countable
 {
@@ -41,7 +43,7 @@ class CsvIterator implements Iterator //, Countable
 		while( !feof($fileHandle) ) {
 			$line = fgets($fileHandle);
 			$numberOfLines++;
-		} 
+		}
 
 		return $numberOfLines;
 	}
@@ -61,4 +63,3 @@ class CsvIterator implements Iterator //, Countable
 	}
 
 }
-© 2020 GitHub, Inc.
