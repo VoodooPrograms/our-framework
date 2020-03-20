@@ -30,7 +30,10 @@
       <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/sebastian/version" />
       <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/Ourframework/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />

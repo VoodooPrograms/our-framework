@@ -33,3 +33,12 @@ routing:
     bartek:
         path: /radek/{String}/*/*/
         action: Ourframework\User\Controllers\BartekController
+    coronavirus:
+        path: /*/*/*
+        action: Ourframework\User\Controllers\SimpleController
+    coronavirus2:
+        path: /*/*/*/*
+        action: Ourframework\User\Controllers\SimpleController
+    coronavirus3:
+        path: /*/*/*/*/*
+        action: Ourframework\User\Controllers\SimpleController
