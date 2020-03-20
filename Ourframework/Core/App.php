@@ -16,7 +16,7 @@ class App
     {
         $app = new App();
         $apphelper = $app->getAppHelper();
-        $requesttype = $apphelper->setup();
+        $apphelper->setup();
         $app->handleRequest();
     }
 
