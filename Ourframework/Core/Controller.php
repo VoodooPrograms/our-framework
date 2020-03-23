@@ -37,6 +37,11 @@ abstract class Controller
         }
         else if ($engine == "blade"){
             // TODO: For beloved Filip
+
+            $views = __DIR__ . '/views'; // it uses the folder /views to read the templates
+            $cache = __DIR__ . '/cache'; // it uses the folder /cache to compile the result.
+            $blade=new bladeone\BladeOne(__DIR__.'/views',__DIR__.'/compiles');
+            echo $blade->render($template, $parr); // TODO: return string
         }
         else {
             $loader = $settings["core"]["template_path"];
