@@ -265,9 +265,9 @@ ___
 + ### Future of features
 
 ## Contributors
-https://github.com/aleksanderKuzmicz
-https://github.com/bartq98
-https://github.com/filip6464
-https://github.com/dd0h
-https://github.com/Flower35
-https://github.com/r0jsik
++ https://github.com/aleksanderKuzmicz
++ https://github.com/bartq98
++ https://github.com/filip6464
++ https://github.com/dd0h
++ https://github.com/Flower35
++ https://github.com/r0jsik
