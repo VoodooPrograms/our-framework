@@ -104,7 +104,7 @@ In the routing.yaml file we have routing section where we define our routes. Rou
 
 
 `routing.yaml`:
-```
+```yaml
 routing:
     homepage:
         path: /
@@ -174,7 +174,7 @@ To change template enging you should edit Config/settings.yaml file
 
 `settings.yaml`:
 
-```
+```yaml
 template:
     engine: ['smarty'] # or twig, blade, smarty etc.
 ```
@@ -184,7 +184,7 @@ template:
 3.1 Twig
 Controller Code
 
-```
+```php
 class TwigController extends Controller
 {
     public function index(Request $request)
@@ -196,7 +196,7 @@ class TwigController extends Controller
 ```
 `example_template.html.twig`:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,7 +212,7 @@ class TwigController extends Controller
 3.2 Bladeone
 Controller Code
 
-```
+```php
 class BladeoneController extends Controller
 {
     public function index(Request $request)
@@ -223,7 +223,7 @@ class BladeoneController extends Controller
 }
 ```
 `example_template.blade.php`:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -239,7 +239,7 @@ class BladeoneController extends Controller
 4.3 Smarty
 Controller Code
 
-```
+```php
 class SmartyController extends Controller
 {
     public function index(Request $request)
